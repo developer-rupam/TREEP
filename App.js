@@ -15,18 +15,11 @@ export default function App() {
    <NavigationContainer>
      <Stack.Navigator screenOptions={{headerShown : false}} initialRouteName={"Home"}>
        <Stack.Screen name="Home" component={Tabs} />
-       <Stack.Screen name="Settings" component={Settings} />
-       <Stack.Screen name="Profile" component={Profile} />
+       <Stack.Screen name="Settings" component={Tabs} />
+       <Stack.Screen name="Profile" component={Tabs} />
      </Stack.Navigator>
    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+

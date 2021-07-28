@@ -8,11 +8,16 @@ import { icons } from "../constants";
 
 const Tab = createBottomTabNavigator();
 
+
 const Tabs = () => {
     return (
         <Tab.Navigator
             tabBarOptions={{
                 showLabel: false,
+                style: {
+                    borderTopWidth: 0,
+                    elevation: 0
+                }
             }}
         >
             <Tab.Screen
@@ -24,11 +29,12 @@ const Tabs = () => {
                             source={icons.PASSPORT}
                             resizeMode="contain"
                             style={{
-                                width: 30,
-                                height: 30,
+                                width: focused ? 40 : 30,
+                                height: focused ? 40 : 30,
                             }}
                         />
-                    )
+                    ),
+                    
                 }}
             />
 
@@ -41,11 +47,12 @@ const Tabs = () => {
                             source={icons.TRAVELLER}
                             resizeMode="contain"
                             style={{
-                                width: 30,
-                                height: 30,
+                                width: focused ? 40 : 30,
+                                height: focused ? 40 : 30,
                             }}
                         />
-                    )
+                    ),
+                    
                 }}
             />
 
@@ -58,11 +65,12 @@ const Tabs = () => {
                             source={icons.GEAR}
                             resizeMode="contain"
                             style={{
-                                width: 30,
-                                height: 30,
+                                width: focused ? 40 : 30,
+                                height: focused ? 40 : 30,
                             }}
                         />
-                    )
+                    ),
+                   
                 }}
             />
 
