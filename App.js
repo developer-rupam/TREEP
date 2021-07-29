@@ -5,7 +5,7 @@ import {NavigationContainer} from '@react-navigation/native'
 import { StyleSheet, Text, View } from 'react-native';
 import Tabs from './navigation/tabs';
 /* importing screens here */
-import {Home,Settings,Profile} from './screens';
+import {Home,Settings,Profile,Login,Register} from './screens';
 
 
 /* Creating Stack for navigation to screen */
@@ -13,10 +13,12 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
    <NavigationContainer>
-     <Stack.Navigator screenOptions={{headerShown : false}} initialRouteName={"Home"}>
+     <Stack.Navigator screenOptions={{headerShown : false}} initialRouteName={"Login"}>
        <Stack.Screen name="Home" component={Tabs} />
        <Stack.Screen name="Settings" component={Tabs} />
        <Stack.Screen name="Profile" component={Tabs} />
+       <Stack.Screen name="Register" component={Register} />
+       <Stack.Screen name="Login" component={Login} />
      </Stack.Navigator>
    </NavigationContainer>
   );

@@ -9,6 +9,12 @@ export const SUITCASE = require('../assets/icons/suitcase.png');
 export const SIGNPOST = require('../assets/icons/signpost.png');
 export const TRAVEL = require('../assets/icons/travel.png');
 export const TRAVELLER = require('../assets/icons/traveller.png');
+export const EMAIL = require('../assets/icons/email.png');
+export const PHONE = require('../assets/icons/phone.png');
+export const KEY = require('../assets/icons/key.png');
+export const SHOWPASSWORD = require('../assets/icons/show-password.png');
+export const HIDEPASSWORD = require('../assets/icons/hide-password.png');
+export const MOTORBIKETRIP = require('../assets/icons/motorbike.png');
 
 export default {
     ADD,
@@ -21,5 +27,11 @@ export default {
     SIGNPOST,
     SUITCASE,
     TRAVEL,
-    TRAVELLER
+    TRAVELLER,
+    EMAIL,
+    PHONE,
+    KEY,
+    SHOWPASSWORD,
+    HIDEPASSWORD,
+    MOTORBIKETRIP
 }
