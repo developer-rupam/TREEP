@@ -56,18 +56,6 @@ const Login = (props) => {
                         source={icons.PHONE}
                         style={styles.inputIcon}
                     />
-                </View>
-                <View style={styles.inputContainer}>
-                    
-                    <TextInput
-                        placeholder={'Password'}
-                        secureTextEntry={!showPassword}
-                        placeholderTextColor={'#5e5a5a'}
-                        underLineColorAndroid='transparent'
-                        style={styles.input}
-                        value={password}
-                        onChangeText={(text) => setPasswordField(text)}
-                    />
                     {showPassword && <TouchableOpacity onPress={()=>setPasswordMode(false)}>
                         <Image 
                             source={icons.SHOWPASSWORD}
@@ -80,6 +68,19 @@ const Login = (props) => {
                             style={styles.showPasswordBtn}
                         />
                     </TouchableOpacity>}
+                </View>
+                <View style={styles.inputContainer}>
+                    
+                    <TextInput
+                        placeholder={'Password'}
+                        secureTextEntry={!showPassword}
+                        placeholderTextColor={'#5e5a5a'}
+                        underLineColorAndroid='transparent'
+                        style={styles.input}
+                        value={password}
+                        onChangeText={(text) => setPasswordField(text)}
+                    />
+                    
                     <Image
                         source={icons.KEY}
                         style={styles.inputIcon}
@@ -157,6 +158,7 @@ const styles = StyleSheet.create({
         position : 'absolute',
         top : 50,
         left:50,
+        zIndex:-100000000000000000000000000000
 
     },
     loginBtn : {

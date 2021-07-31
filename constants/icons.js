@@ -15,6 +15,10 @@ export const KEY = require('../assets/icons/key.png');
 export const SHOWPASSWORD = require('../assets/icons/show-password.png');
 export const HIDEPASSWORD = require('../assets/icons/hide-password.png');
 export const MOTORBIKETRIP = require('../assets/icons/motorbike.png');
+export const MAPMARKER = require('../assets/icons/map-marker.png');
+export const MAPVIEW = require('../assets/icons/map-view.png');
+export const BACK = require('../assets/icons/back.png');
+export const SOS = require('../assets/icons/sos.png');
 
 export default {
     ADD,
@@ -33,5 +37,9 @@ export default {
     KEY,
     SHOWPASSWORD,
     HIDEPASSWORD,
-    MOTORBIKETRIP
+    MOTORBIKETRIP,
+    MAPMARKER,
+    MAPVIEW,
+    BACK,
+    SOS
 }

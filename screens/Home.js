@@ -1,12 +1,15 @@
 import React from "react";
-import { View, Text, Image, StyleSheet } from "react-native";
+import { View, Text, Image, StyleSheet,Button } from "react-native";
 import { icons } from "../constants";
 
-const Home = () => {
+const Home = (props) => {
     return (
         <View style={styles.container}>
             <Text>You are in Home Buddy !!</Text>
-
+            <Button 
+                title="Explore"
+                onPress={() => props.navigation.navigate('Explore')}
+            />
         </View>
     )
 }
@@ -20,4 +23,5 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+    
 });

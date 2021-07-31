@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Image, TouchableOpacity } from 'react-native';
 import { createBottomTabNavigator, BottomTabBar } from "@react-navigation/bottom-tabs";
 
-import { Home, Settings, Profile } from "../screens";
+import { Home, Settings, Profile,Explore } from "../screens";
 
 import { icons } from "../constants";
 
