@@ -52,8 +52,8 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       List<ReactPackage> packages = new PackageList(this).getPackages();
       packages.add(new ModuleRegistryAdapter(mModuleRegistryProvider));
-      packages.add(new GeolocationPackage());
       packages.add(new RNFusedLocationPackage());
+      packages.add(new GeolocationPackage());
             
       return packages;
     }

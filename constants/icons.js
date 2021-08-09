@@ -19,6 +19,7 @@ export const MAPMARKER = require('../assets/icons/map-marker.png');
 export const MAPVIEW = require('../assets/icons/map-view.png');
 export const BACK = require('../assets/icons/back.png');
 export const SOS = require('../assets/icons/sos.png');
+export const SEARCH = require('../assets/icons/search.png');
 
 export default {
     ADD,
@@ -41,5 +42,6 @@ export default {
     MAPMARKER,
     MAPVIEW,
     BACK,
-    SOS
+    SOS,
+    SEARCH
 }
